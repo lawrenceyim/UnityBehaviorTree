@@ -74,3 +74,6 @@ crashlytics-build.properties
 .vscode
 .vsconfig
 .DS_Store
+
+# For libraries only and not actual projects
+.meta
