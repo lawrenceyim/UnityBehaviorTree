@@ -1,22 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BehaviorTreeExample : MonoBehaviour
-{
+public class BehaviorTreeExample : MonoBehaviour {
     private BehaviorTree behaviorTree;
     [SerializeField] bool enemyVisible;
     [SerializeField] bool inShootingRange;
     [SerializeField] bool inMeleeRange;
     [SerializeField] bool hasAmmo;
 
-    void Start()
-    {
+    void Start() {
         InitializeBehaviorTree();
     }
 
-    private void InitializeBehaviorTree()
-    {
+    private void InitializeBehaviorTree() {
         behaviorTree = new BehaviorTree();
         BooleanNode parentNode = new BooleanNodeBuilder()
             .SetCondition(() => enemyVisible)
@@ -41,8 +36,7 @@ public class BehaviorTreeExample : MonoBehaviour
         behaviorTree.Behave();
     }
 
-    void Update()
-    {
+    void Update() {
         behaviorTree.Behave();
     }
 }

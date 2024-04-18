@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BehaviorTree
-{
+public class BehaviorTree {
     private Node parentNode;
 
-    public BehaviorTree() {}
+    public BehaviorTree() { }
 
     public BehaviorTree(Node parentNode) {
         this.parentNode = parentNode;
