@@ -76,4 +76,4 @@ crashlytics-build.properties
 .DS_Store
 
 # For libraries only and not actual projects
-.meta
+*.meta
