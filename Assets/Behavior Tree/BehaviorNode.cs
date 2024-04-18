@@ -12,6 +12,10 @@ public class BehaviorNode : Node
     public BehaviorNode(Action action) {
         this.behavior = action;
     }
+
+    public void SetAction(Action action) {
+        this.behavior = action;
+    }
     
     public override void Behave() {
         behavior();
